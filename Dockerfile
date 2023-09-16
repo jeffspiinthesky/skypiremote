@@ -1,4 +1,4 @@
-FROM docker-jksmith.ddns.net:5000/raspbian:buster
+FROM navikey/raspbian-bullseye
 
 # Set up basic environment
 RUN apt update && apt upgrade -y
