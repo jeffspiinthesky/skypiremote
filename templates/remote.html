@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <center>
+        <div class="wrapper">
+            <div class="leftmargin">
+                &nbsp;
+            </div>
+            <div class="remote-row row01">
+                <button class="btn remote-button btn-primary" name="{{RCMD.power.value}}">Power</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.sky.value}}">Sky</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.search.value}}">Search</button>
+            </div>
+            <div class="remote-row row02">
+                <button class="btn remote-button btn-primary" name="{{RCMD.rewind.value}}"><<</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.play.value}}">Play</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.fastforward.value}}">>></button>
+            </div>
+            <div class="remote-row row03">
+                <button class="btn remote-button btn-primary" name="{{RCMD.up.value}}">Up</button>
+            </div>
+            <div class="remote-row row04">
+                <button class="btn remote-button btn-primary" name="{{RCMD.left.value}}">Left</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.select.value}}">Select</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.right.value}}">Right</button>
+            </div>
+            <div class="remote-row row05">
+                <button class="btn remote-button btn-primary" name="{{RCMD.down.value}}">Down</button>
+            </div>
+            <div class="remote-row row06">
+                <button class="btn remote-button btn-primary" name="{{RCMD.backup.value}}">Back</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.home.value}}">Home</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.tvguide.value}}">Guide</button>
+            </div>
+            <div class="remote-row row07">
+                <button class="btn remote-button btn-primary" name="{{RCMD.i.value}}">i</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.channelup.value}}">Ch. Up</button>
+            </div>
+            <div class="remote-row row08">
+                <button class="btn remote-button btn-primary" name="{{RCMD.record.value}}">Record</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.channeldown.value}}">Ch. Dwn</button>
+            </div>
+            <div class="remote-row row09">
+                <button class="btn remote-colour-button btn-primary" style="background-color: red" name="{{RCMD.red.value}}">&nbsp;</button>
+                <button class="btn remote-colour-button btn-primary" style="background-color: green" name="{{RCMD.green.value}}">&nbsp;</button>
+                <button class="btn remote-colour-button btn-primary" style="background-color: yellow" name="{{RCMD.yellow.value}}">&nbsp;</button>
+                <button class="btn remote-colour-button btn-primary" style="background-color: blue" name="{{RCMD.blue.value}}">&nbsp;</button>
+            </div>
+            <div class="remote-row row10">
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}}">1</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.two.value}}">2</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.three.value}}">3</button>
+            </div>
+            <div class="remote-row row11">
+                <button class="btn remote-button btn-primary" name="{{RCMD.four.value}}">4</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.five.value}}">5</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.six.value}}">6</button>
+            </div>
+            <div class="remote-row row12">
+                <button class="btn remote-button btn-primary" name="{{RCMD.seven.value}}">7</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.eight.value}}">8</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.nine.value}}">9</button>
+            </div>
+            <div class="remote-row row13">
+                <button class="btn remote-button btn-primary" name="{{RCMD.zero.value}}">0</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.help.value}}">?</button>
+            </div>
+            <div class="rightmargin">
+                &nbsp;
+            </div>
+        </div>
+        <form id="remoteForm" method="post">
+            <div class="form-group">
+                <input type="hidden" name="pressedButton" id="pressedButton" />
+            </div>
+        </form>
+    </center>
+{% endblock %}

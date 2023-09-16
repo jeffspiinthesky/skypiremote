@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <center>
+        <div class="channel-wrapper">
+            <div class="leftmargin">
+                &nbsp;
+            </div>
+            <div class="remote-row row01">
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.zero.value}},{{RCMD.one.value}}">BBC 1</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.zero.value}},{{RCMD.two.value}}">BBC 2</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.one.value}},{{RCMD.five.value}}">BBC 3</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.one.value}},{{RCMD.six.value}}">BBC 4</button>
+            </div>
+            <div class="remote-row row02">
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.one.value}},{{RCMD.zero.value}},{{RCMD.three.value}}">ITV</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.one.value}},{{RCMD.one.value}},{{RCMD.eight.value}}">ITV2</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.one.value}},{{RCMD.one.value}},{{RCMD.nine.value}}">ITV3</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.one.value}},{{RCMD.two.value}},{{RCMD.zero.value}}">ITV4</button>
+            </div>
+            <div class="remote-row row03">
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.one.value}},{{RCMD.zero.value}},{{RCMD.four.value}}">Ch.4</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.one.value}},{{RCMD.three.value}},{{RCMD.five.value}}">E4</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.one.value}},{{RCMD.three.value}},{{RCMD.six.value}}">More4</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.one.value}},{{RCMD.three.value}},{{RCMD.seven.value}}">4Seven</button>
+            </div>
+            <div class="remote-row row04">
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.one.value}},{{RCMD.zero.value}},{{RCMD.five.value}}">Ch.5</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.one.value}},{{RCMD.two.value}},{{RCMD.eight.value}}">5Star</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.one.value}},{{RCMD.four.value}},{{RCMD.one.value}}">5 USA</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.one.value}},{{RCMD.five.value}},{{RCMD.three.value}}">5 Select</button>
+            </div>
+            <div class="remote-row row05">
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.four.value}},{{RCMD.two.value}}">Really</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.four.value}},{{RCMD.three.value}}">Drama</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.five.value}},{{RCMD.five.value}}">Y'day</button>
+            </div>
+            <div class="remote-row row06">
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.one.value}},{{RCMD.zero.value}}">GOLD</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.one.value}},{{RCMD.one.value}}">Dave</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.three.value}},{{RCMD.two.value}}">W</button>
+            </div>
+            <div class="remote-row row07">
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.zero.value}},{{RCMD.six.value}}">Sky Showcs</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.zero.value}},{{RCMD.seven.value}}">Sky Wtns</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.zero.value}},{{RCMD.eight.value}}">Sky Atln</button>
+            </div>
+            <div class="remote-row row08">
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.two.value}},{{RCMD.one.value}}">Sky Docs</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.two.value}},{{RCMD.three.value}}">Sky Hist</button>
+                <button class="btn remote-button btn-primary" name="{{RCMD.one.value}},{{RCMD.three.value}},{{RCMD.zero.value}}">Sky Arts</button>
+            </div>
+            <div class="remote-row row09">
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.zero.value}},{{RCMD.one.value}}">Cinema 1</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.zero.value}},{{RCMD.two.value}}">Cinema 2</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.zero.value}},{{RCMD.three.value}}">Cinema 3</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.zero.value}},{{RCMD.four.value}}">Cinema 4</button>
+            </div>
+            <div class="remote-row row10">
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.zero.value}},{{RCMD.five.value}}">Cinema 5</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.zero.value}},{{RCMD.six.value}}">Cinema 6</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.zero.value}},{{RCMD.seven.value}}">Cinema 7</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.zero.value}},{{RCMD.eight.value}}">Cinema 8</button>
+            </div>
+            <div class="remote-row row11">
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.zero.value}},{{RCMD.nine.value}}">Cinema 9</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.one.value}},{{RCMD.zero.value}}">Cinema 10</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.one.value}},{{RCMD.one.value}}">Cinema 11</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.one.value}},{{RCMD.two.value}}">Cinema 12</button>
+            </div>
+            <div class="remote-row row12">
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.one.value}},{{RCMD.three.value}}">Film4</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.one.value}},{{RCMD.seven.value}}">HorrorXtra</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.two.value}},{{RCMD.one.value}}">GRT!Mov</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.three.value}},{{RCMD.two.value}},{{RCMD.five.value}}">Movies24</button>
+            </div>
+            <div class="remote-row row13">
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.four.value}},{{RCMD.zero.value}},{{RCMD.one.value}}">SkySpME</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.four.value}},{{RCMD.zero.value}},{{RCMD.two.value}}">SkySpPL</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.four.value}},{{RCMD.zero.value}},{{RCMD.six.value}}">SkySpF1</button>
+                <button class="btn remote-colour-button btn-primary" name="{{RCMD.four.value}},{{RCMD.zero.value}},{{RCMD.nine.value}}">SkySpNws</button>
+            </div>
+            <div class="rightmargin">
+                &nbsp;
+            </div>
+        </div>
+        <form id="channelsForm" method="post">
+            <div class="form-group">
+                <input type="hidden" name="pressedButton" id="pressedButton" />
+            </div>
+        </form>
+    </center>
+{% endblock %}
