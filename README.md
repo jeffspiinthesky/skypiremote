@@ -18,10 +18,14 @@ Within the templates folder, the following files exist:
 A menu in the webapp allows either the traditional remote layout (default) or the channels remote layout to be displayed and used.
 
 ## Build
+```
 docker build --rm -t <TAG> -f Dockerfile .
-
+```
 ## Run
+```
 docker run --rm --name SkyRemote -d -e SKYQ <Sky STB IP> -p 80:80 <TAG>
-
+```
 Then open a browser and navigate to:
+```
 http://<IP running Docker container>
+```
